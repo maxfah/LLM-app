@@ -2,20 +2,24 @@
   "name": "LLM-app",
   "version": "0.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "main.js",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "electron .",
     "build": "tsc"
   },
-  "author": "Your Name",
+  "author": "Max Fahrenkrug",
   "license": "UNLICENSED",
   "dependencies": {
     "@lmstudio/sdk": "^0.0.12",
     "child_process": "^1.0.2",
+    "mammoth": "^1.8.0",
     "prompt-sync": "^4.2.0",
+    "showdown": "^2.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
-  "gitHead": "eb198b1c427b6efc59a0589aed998492ce039d77"
+  "gitHead": "eb198b1c427b6efc59a0589aed998492ce039d77",
+  "devDependencies": {
+    "electron": "^31.0.2"
+  }
 }

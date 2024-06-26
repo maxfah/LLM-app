@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Llama3 to DOCX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Llama3 to DOCX</h1>
+        <h2>Using Meta-Llama-3-8B</h2>
+        <div class="response-output" id="response-output"></div>
+        <textarea id="input" placeholder="Message Meta-Llama-3..."></textarea>
+        <div class="buttons">
+            <label for="docx-file">Upload DOCX</label >
+            <input type="file" id="docx-file" accept=".docx" style="display:none;">
+            <button id="submit-btn">Submit</button>
+        </div>
+        <button id="download-btn">Download DOCX</button>
+        <div id="message"></div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
