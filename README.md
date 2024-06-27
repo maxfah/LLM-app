@@ -36,7 +36,7 @@ cmd /c %USERPROFILE%/.cache/lm-studio/bin/lms.exe bootstrap
 
 ```bash
 git clone https://github.com/maxfah/LLM-app.git
-cd llm-studio-gui
+cd LLM-app
 ```
 
 ### 2. Install Dependencies
