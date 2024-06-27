@@ -6,20 +6,32 @@ LLM-app aims to simplify the process of generating responses as .docx from advan
 * **Integration with LM Studio:** Seamlessly connects to LM Studio for advanced language model capabilities.
 * **Electron GUI:** Offers a desktop application interface powered by Electron for easy use.
 
-### Created with LM Studio scaffold.
-
-This scaffold is a starting point for building an AI-enabled Node.js project with [LM Studio](https://lmstudio.ai/) SDK. To interact with LM Studio, you should start the LM Studio local server with the command:
-
-```bash
-lms server start
-```
-
 ### Prerequisites
-* Node.js and npm
-* Pandoc (for document conversions)
+* [Node.js](https://nodejs.org/en)
+* [Pandoc](https://pandoc.org/installing.html)
+* [LM Studio](https://lmstudio.ai/)
 
 ## Getting Started
 
+### 0. Bootstrapping LM Studio
+
+To use LM Studio, you need to run it at least once. After that, follow the instructions below based on your operating system to bootstrap LMS.
+
+#### Mac / Linux
+
+Open your terminal and run the following command:
+
+```sh
+~/.cache/lm-studio/bin/lms bootstrap
+```
+
+#### Windows
+
+Open Command Prompt and run the following command:
+
+```cmd
+cmd /c %USERPROFILE%/.cache/lm-studio/bin/lms.exe bootstrap
+```
 ### 1. Clone the Repository
 
 ```bash
@@ -33,9 +45,13 @@ cd llm-studio-gui
 npm install
 ```
 
-### 3. Install Pandoc
+### 3. Enable LM Studio
 
-[Pandoc Installation Guide](https://pandoc.org/installing.html)
+To interact with LM Studio, you should start the LM Studio local server with the command:
+
+```bash
+lms server start
+```
 
 ## Usage
 
